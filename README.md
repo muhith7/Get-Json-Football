@@ -46,4 +46,4 @@ Program ini menggunakan library eksternal berikut:
 
 Pastikan untuk menambahkan library JSON.simple ke proyek Anda sebelum menjalankan program.
 
-Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk mengajukannya!
+Cc : Abdul Muhith
