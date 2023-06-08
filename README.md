@@ -7,10 +7,19 @@ Program ini memungkinkan Anda untuk mencari tim sepak bola berdasarkan nama mere
 1. Pastikan Anda memiliki Java terinstal di sistem Anda.
 2. Clone repository atau unduh kode sumber program.
 3. Buka proyek pada IDE Java pilihan Anda.
-4. Tempatkan file data JSON Anda dalam direktori `src/main/resources`.
-5. Buka file `Main.java` dan ubah variabel `jsonFile` dengan jalur file data JSON Anda.
-6. Compile dan jalankan file `Main.java` untuk menjalankan program.
+4. Tambahkan dependensi `json-simple` ke proyek Anda. Jika Anda menggunakan Maven, tambahkan dependensi berikut pada file `pom.xml`:
 
+   ```xml
+   <dependency>
+       <groupId>com.googlecode.json-simple</groupId>
+       <artifactId>json-simple</artifactId>
+       <version>1.1.1</version>
+   </dependency>
+
+5. Tempatkan file data JSON Anda dalam direktori src/main/resources.
+6. Buka file Main.java dan ubah variabel jsonFile dengan jalur file data JSON Anda.
+7. Compile dan jalankan file Main.java untuk menjalankan program.
+   
 ## Struktur Kode
 
 ### `Main.java`
