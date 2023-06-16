@@ -55,4 +55,39 @@ Program ini menggunakan library eksternal berikut:
 
 Pastikan untuk menambahkan library JSON.simple ke proyek Anda sebelum menjalankan program.
 
+`updated`
+Dalam kode di atas, terdapat satu method yaitu `countTotalSpacesInName()`. Berikut adalah penjelasan mengenai method tersebut:
+
+**Method: countTotalSpacesInName()**
+- Deskripsi: Method ini digunakan untuk menghitung jumlah total spasi pada notasi 'name' dalam file JSON.
+- Tipe: Method instance (non-static).
+- Kembalian (return): Tipe data `int`. Jumlah total spasi pada notasi 'name'.
+- Parameter: Tidak ada.
+
+**Langkah-langkah dalam method countTotalSpacesInName()**
+1. Menginisialisasi variabel `totalSpaces` dengan nilai awal 0 yang akan digunakan untuk menyimpan jumlah total spasi.
+2. Membaca file JSON menggunakan `BufferedReader` dan `FileReader`.
+3. Memparsing isi file JSON menggunakan `JSONParser` dan menyimpan hasilnya dalam objek `JSONObject`.
+4. Mengakses array "clubs" dalam objek `JSONObject` yang berisi data tim.
+5. Melakukan perulangan untuk setiap objek tim dalam array "clubs".
+6. Mengakses notasi 'name' dalam objek tim dan menghitung jumlah spasi menggunakan method `countSpaces()`.
+7. Menambahkan jumlah spasi pada `totalSpaces`.
+8. Menutup `BufferedReader`.
+9. Mengembalikan nilai `totalSpaces` sebagai hasil perhitungan.
+
+**Method: countSpaces(String text)**
+- Deskripsi: Method ini digunakan untuk menghitung jumlah spasi dalam sebuah teks.
+- Tipe: Method private (hanya dapat diakses oleh kelas `TeamData`).
+- Kembalian (return): Tipe data `int`. Jumlah spasi dalam teks.
+- Parameter: `text` (tipe data `String`). Teks yang akan dihitung jumlah spasi.
+
+**Langkah-langkah dalam method countSpaces(String text)**
+1. Menginisialisasi variabel `count` dengan nilai awal 0 yang akan digunakan untuk menyimpan jumlah spasi.
+2. Melakukan perulangan untuk setiap karakter dalam teks.
+3. Jika karakter tersebut merupakan spasi, maka increment nilai `count`.
+4. Mengembalikan nilai `count` sebagai hasil perhitungan.
+
+Dengan menggunakan method `countTotalSpacesInName()`, kita dapat menghitung jumlah total spasi pada notasi 'name' dalam file JSON.
+
+
 Cc : Abdul Muhith

@@ -1,12 +1,11 @@
 package football;
 
 import football.Team;
-import football.TeamList; // Mengimpor kelas TeamList dari paket football
-import java.util.Scanner; // Mengimpor kelas Scanner dari paket java.util
-
+import football.TeamList;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        String jsonFile = "src/main/resources/sepakbola.json"; // Menentukan lokasi file JSON
+        String jsonFile = "src/main/resources/sepakbola.json";
         TeamList teamList = new TeamList(jsonFile); // Membuat objek TeamList dengan menggunakan file JSON
 
         // Menampilkan semua data tim
@@ -33,5 +32,11 @@ public class Main {
         }
 
         scanner.close(); // Menutup objek Scanner setelah selesai digunakan
+
+        TeamData teamData = new TeamData(jsonFile);
+
+        int totalSpaces = teamData.countTotalSpacesInName();
+        System.out.println("Jumlah total spasi pada notasi 'name': " + totalSpaces);
     }
+
 }
